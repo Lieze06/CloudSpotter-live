@@ -14,6 +14,224 @@
     <main id="site" aria-label="Cloudspotter">
 <!doctype html>
 <html lang="nl">
+<!-- clean-cloudspotter-live-20261123 -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0878c5">
+    <meta name="description" content="Cloudspotter — elke week een nieuwe kijk op wat er in de lucht te zien is.">
+    <title>Cloudspotter — kijk omhoog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="click-clouds" aria-hidden="true"></div>
+    <main id="site" aria-label="Cloudspotter">
+      <section class="screen home-screen is-active" id="home" aria-label="Cloudspotter edities">
+        <div class="home-artboard">
+          <div class="home-logo">CloudSpotter</div>
+          <img
+            class="artwork-source"
+            src="assets/artwork/cover-artwork.png"
+            alt=""
+            draggable="false"
+          >
+          <canvas class="artwork-static" aria-hidden="true"></canvas>
+          <nav class="cloud-index" aria-label="Kies een editie">
+            <a class="edition-cloud cloud-1" href="#edition-1" aria-label="Open editie 1: tekst">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 1</span></span>
+            </a>
+            <a class="edition-cloud cloud-2" href="#edition-2" aria-label="Open editie 2: beeld">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 2</span></span>
+            </a>
+            <a class="edition-cloud cloud-3" href="#edition-3" aria-label="Open editie 3: desktop en mobiel">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 3</span></span>
+            </a>
+            <a class="edition-cloud cloud-4" href="#edition-4" aria-label="Open editie 4: rangschik de wolken">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 4</span></span>
+            </a>
+            <a class="edition-cloud cloud-5" href="#edition-5" aria-label="Open editie 5: doorheen de dag">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 5</span></span>
+            </a>
+            <a class="edition-cloud cloud-6" href="#upcoming-6" data-upcoming="6" aria-label="Editie 6 komt binnenkort">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 6</span></span>
+            </a>
+            <a class="edition-cloud cloud-7" href="#upcoming-7" data-upcoming="7" aria-label="Editie 7 komt binnenkort">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 7</span></span>
+            </a>
+            <a class="edition-cloud cloud-8" href="#upcoming-8" data-upcoming="8" aria-label="Editie 8 komt binnenkort">
+              <span class="cloud-drift"><canvas aria-hidden="true"></canvas><span class="edition-label">Editie 8</span></span>
+            </a>
+          </nav>
+          <button class="index-hotspot" type="button" aria-label="Open het editiesoverzicht">Index</button>
+        </div>
+        <p class="artwork-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="screen edition-screen edition-one" id="edition-1" aria-labelledby="edition-one-title" inert>
+        <header class="page-nav">
+          <a class="nav-home" href="#home" data-route="home">Cloudspotter</a>
+          <span class="nav-edition">EDITIE 01 / TEKST</span>
+          <a class="nav-next" href="#edition-2">Volgende <span aria-hidden="true">→</span></a>
+        </header>
+        <div class="edition-one-content">
+          <h1 class="cloud-wordmark" id="edition-one-title">Cloudspotter</h1>
+          <p class="edition-lead">
+            Elke week een nieuwe editie over het weer.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen edition-screen edition-two" id="edition-2" aria-labelledby="edition-two-title" inert>
+        <header class="page-nav">
+          <a class="nav-home" href="#home" data-route="home">← Terug naar de lucht</a>
+          <span class="nav-edition">EDITIE 02 / BEELD</span>
+          <a class="nav-next" href="#edition-3">Volgende <span aria-hidden="true">→</span></a>
+        </header>
+        <div class="gallery-content">
+          <h1 class="edition-two-heading" id="edition-two-title">Editie 2</h1>
+          <div class="image-field" aria-label="Zes wolkenbeelden">
+            <figure class="image-card image-landscape" draggable="true">
+              <img src="https://lieze06.github.io/CloudSpotter/assets/edition-2/clouds-04.jpeg" alt="Witte wolken in een diepe blauwe lucht">
+            </figure>
+            <figure class="image-card image-portrait" draggable="true">
+              <img src="https://lieze06.github.io/CloudSpotter/assets/edition-2/clouds-05.jpeg" alt="Wolken tegen een heldere blauwe hemel">
+            </figure>
+            <figure class="image-card image-landscape" draggable="true">
+              <img src="https://lieze06.github.io/CloudSpotter/assets/edition-2/clouds-06.jpeg" alt="Losse wolken op een donkere blauwe hemel">
+            </figure>
+            <figure class="image-card image-portrait" draggable="true">
+              <img src="https://lieze06.github.io/CloudSpotter/assets/edition-2/clouds-07.jpeg" alt="Lucht vol witte wolken">
+            </figure>
+            <figure class="image-card image-portrait" draggable="true">
+              <img src="https://lieze06.github.io/CloudSpotter/assets/edition-2/clouds-08.jpeg" alt="Wolken die door de wind bewegen">
+            </figure>
+            <figure class="image-card image-landscape" draggable="true">
+              <img src="https://lieze06.github.io/CloudSpotter/assets/edition-2/clouds-09.jpg" alt="Wolken aan de horizon">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen edition-screen edition-three" id="edition-3" aria-labelledby="edition-three-title" inert>
+        <header class="page-nav">
+          <a class="nav-home" href="#home" data-route="home">← Terug naar de lucht</a>
+          <span class="nav-edition">EDITIE 03 / SCHERM</span>
+          <a class="nav-next" href="#edition-4">Volgende <span aria-hidden="true">→</span></a>
+        </header>
+        <div class="edition-three-desktop">
+          <div class="edition-three-copy">
+            <p class="eyebrow">EDITIE 03 · TWEE PERSPECTIEVEN</p>
+            <h1 id="edition-three-title">Dezelfde lucht. Een ander scherm.</h1>
+            <p>Op een groot scherm is er plaats om even te blijven kijken. Op je telefoon komt de wolk dichterbij.</p>
+            <span class="screen-note">Kijk nu op een smaller scherm.</span>
+          </div>
+          <figure class="edition-three-image">
+            <img src="https://lieze06.github.io/CloudSpotter/assets/edition-3/cloud-drawing.jpg" alt="Wolken boven een blauwe hemel, gezien van onderaf">
+            <canvas class="edition-three-canvas" aria-label="Teken licht op de wolken"></canvas>
+            <figcaption>Een moment uit de lucht, op groot scherm.</figcaption>
+          </figure>
+        </div>
+        <div class="edition-three-mobile">
+          <img src="https://lieze06.github.io/CloudSpotter/assets/edition-3/cloud-drawing.jpg" alt="Wolken vullen het scherm, gezien van onderaf">
+          <canvas class="edition-three-mobile-canvas" aria-label="Tik op de wolken om licht te tekenen"></canvas>
+          <div class="mobile-edition-copy">
+            <p class="eyebrow">EDITIE 03 · OP JE TELEFOON</p>
+            <h1>Kom dichterbij.</h1>
+            <p>Op een kleiner scherm vult de lucht bijna alles. De wolk voelt anders wanneer je er middenin kijkt.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen edition-screen edition-four" id="edition-4" aria-labelledby="edition-four-title" inert>
+        <header class="page-nav">
+          <a class="nav-home" href="#home" data-route="home">← Terug naar de lucht</a>
+          <span class="nav-edition">EDITIE 04 / JIJ DOET MEE</span>
+          <a class="nav-next" href="#edition-5">Volgende <span aria-hidden="true">→</span></a>
+        </header>
+        <div class="ranking-content">
+          <div class="weather-sorter" aria-label="Rangschik de weertypes">
+            <div class="weather-source" aria-label="Beschikbare weertypes">
+              <button class="weather-symbol" type="button" draggable="true" data-weather="zon" aria-label="Zonnig">☀</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="zonnig-wolkig" aria-label="Zonnig en bewolkt">🌤</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="regen" aria-label="Regen">🌧</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="hagel-sneeuw" aria-label="Sneeuw en hagel">🌨</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="bewolkt" aria-label="Bewolkt">☁</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="wolken-regen" aria-label="Bewolkt met regen">☔</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="storm" aria-label="Storm">⛈</button>
+              <button class="weather-symbol weather-symbol-snow-storm" type="button" draggable="true" data-weather="sneeuw-onweer" aria-label="Sneeuw en bliksem"><span class="symbol-cloud">☁</span><span class="symbol-bolt">ϟ</span></button>
+              <button class="weather-symbol weather-symbol-snow" type="button" draggable="true" data-weather="sneeuw" aria-label="Sneeuw">❄</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="bliksem" aria-label="Bliksem">🌩</button>
+              <button class="weather-symbol weather-symbol-storm-snow" type="button" draggable="true" data-weather="onweer-sneeuw" aria-label="Onweer en sneeuw"><span class="symbol-cloud">☁</span><span class="symbol-bolt">ϟ</span><span class="symbol-snow">❄</span></button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="wind" aria-label="Winderig">≋</button>
+              <button class="weather-symbol weather-symbol-moon" type="button" draggable="true" data-weather="nacht-wolk" aria-label="Wolk in de nacht"><span class="symbol-cloud">☁</span><span class="symbol-moon">◔</span></button>
+              <button class="weather-symbol weather-symbol-mist" type="button" draggable="true" data-weather="mist" aria-label="Mist"><span class="symbol-mist">≋</span><span class="symbol-cloud">☁</span></button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="nacht-wind" aria-label="Nachtwind">🌬</button>
+              <button class="weather-symbol" type="button" draggable="true" data-weather="wolk" aria-label="Losse wolk">☁</button>
+            </div>
+            <div class="weather-zones">
+              <div class="weather-zone" data-rank="1"><strong>1</strong><span>Favoriet</span></div>
+              <div class="weather-zone" data-rank="2"><strong>2</strong><span>Goed</span></div>
+              <div class="weather-zone" data-rank="3"><strong>3</strong><span>Minder</span></div>
+              <div class="weather-zone" data-rank="4"><strong>4</strong><span>Niet graag</span></div>
+            </div>
+          </div>
+          <p class="ranking-status" aria-live="polite">Sleep elk symbool naar een vakje.</p>
+          <button class="weather-reset" type="button" aria-label="Herstart alle rangschikking">Opnieuw proberen</button>
+          <div class="celebration" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="screen edition-screen edition-five" id="edition-5" aria-labelledby="edition-five-title" inert>
+        <header class="page-nav">
+          <a class="nav-home" href="#home" data-route="home">← Terug naar de lucht</a>
+          <span class="nav-edition">EDITIE 05 / DOOR DE DAG</span>
+          <span class="nav-next nav-end">Einde van de reeks</span>
+        </header>
+        <div class="day-scroll" aria-label="Scroll door de 24 uren van een dag">
+          <div class="day-track">
+            <article class="day-scene">
+              <div class="day-sky">
+                <div class="rain-layer" aria-hidden="true"></div>
+                <div class="clock" aria-label="Klok">
+                  <div class="clock-markers" aria-hidden="true"></div>
+                  <div class="clock-hand hour-hand"></div>
+                  <div class="clock-hand minute-hand"></div>
+                  <div class="clock-center"></div>
+                </div>
+                <div class="day-time">
+                  <p class="eyebrow">TIJD VAN DE DAG</p>
+                  <h1 id="edition-five-title"><span class="time-value">08:00</span></h1>
+                  <p class="weather-event">De zon stijgt op. De lucht wordt langzaam blauw.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="day-progress" aria-live="polite">Scroll om door de dag te gaan <span aria-hidden="true">↓</span></div>
+      </section>
+    </main>
+
+    <dialog class="index-dialog" aria-labelledby="index-title">
+      <form method="dialog">
+        <button class="dialog-close" aria-label="Sluit editiesoverzicht">×</button>
+      </form>
+      <p class="eyebrow">CLOUDSPOTTER</p>
+      <h2 id="index-title">Kies een editie.</h2>
+      <nav class="edition-list" aria-label="Alle edities">
+        <a href="#edition-1"><span>01</span> Alleen tekst</a>
+        <a href="#edition-2"><span>02</span> Beelden</a>
+        <a href="#edition-3"><span>03</span> Desktop en mobiel</a>
+        <a href="#edition-4"><span>04</span> Rangschikken</a>
+        <a href="#edition-5"><span>05</span> Doorheen de dag</a>
+        <p><span>06—08</span> Nieuwe edities volgen</p>
+      </nav>
+    </dialog>
+    <p class="toast" role="status" aria-live="polite"></p>
+  </body>
+</html>
+<!doctype html>
+<html lang="nl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
